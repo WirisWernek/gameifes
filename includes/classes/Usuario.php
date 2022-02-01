@@ -102,10 +102,9 @@ class Usuario
         $this->id = intval($this->conexao->escape_string($id));
         $this->nome = $this->conexao->escape_string($nome);
         $this->login =  $this->conexao->escape_string($login);
-        $this->senha = $this->conexao->escape_string($senha);
         $this->perfilusuario =  intval($this->conexao->escape_string($perfilUsuario));
 
-        $sql = "UPDATE usuario SET nomeCompletoUsuario='$this->nome', `login`='$this->login', senha='$this->senha',perfilUsuarioID='$this->perfilusuario'  WHERE idusuario = '$this->id';";
+        $sql = "UPDATE usuario SET nomeCompletoUsuario='$this->nome', `login`='$this->login',perfilUsuarioID='$this->perfilusuario' WHERE idusuario = '$this->id';";
 
         return $this->conexao->query($sql);
     }
