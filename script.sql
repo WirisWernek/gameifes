@@ -284,8 +284,6 @@ begin
 
 end
 $$
-DELIMITER ;
-
 
 use softedu;
 
