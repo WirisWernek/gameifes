@@ -205,8 +205,8 @@ CREATE PROCEDURE atividade()
 begin
 		select atividade.idatividade as IdAtividade,
         atividade.descricacao as Descricao,
-		nivel.descricaoNivel as Nivel,
-		categoria.descricao as Categoria
+		    nivel.descricaoNivel as Nivel,
+		    categoria.descricao as Categoria
         from atividade inner join nivelatividade nivel
         on atividade.nivelatividadeid = nivel.idnivelAtividade
         inner join categoriaatividade categoria on atividade.categoriaatividadeid = categoria.idcategoriaAtividade;
@@ -271,18 +271,21 @@ begin
 $$
 
 DELIMITER $$
-create procedure set_tempo_acesso(
-in id int)
+CREATE PROCEDURE set_tempo_acesso(
+in id int,
+in fim datetime)
 begin 
-	SELECT @inicio := hora_data, @final := hora_data_final
+	SELECT @inicio := hora_data
 	FROM historicoacessos
 	WHERE idhistoricoacessos=id;
 
-	SELECT @diferenca := timediff(@final, @inicio);
+	SELECT @diferenca := timediff(fim, @inicio);
 	UPDATE historicoacessos SET tempoacesso=@diferenca WHERE idhistoricoacessos=id;
 
 end
 $$
+DELIMITER ;
+
 
 use softedu;
 

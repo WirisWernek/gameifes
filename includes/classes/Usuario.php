@@ -63,7 +63,7 @@ class Usuario
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th >Nome</th>
+                    <th>Nome</th>
                     <th>Login</th>
                     <th>Nível</th>
                     <th>Data de Cadastro</th>
@@ -96,9 +96,8 @@ class Usuario
         </table>';
     }
 
-    public function Update($id, $nome, $login, $senha, $perfilUsuario)
+    public function Update($id, $nome, $login, $perfilUsuario)
     {
-
         $this->id = intval($this->conexao->escape_string($id));
         $this->nome = $this->conexao->escape_string($nome);
         $this->login =  $this->conexao->escape_string($login);
