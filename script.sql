@@ -337,7 +337,7 @@ ADD CONSTRAINT `fk_tipo_imagenstabuleiro`
   ALTER TABLE `softedu`.`usuario` 
 CHANGE COLUMN `idhistoricoacessos` `idhistoricoacessos` INT NULL ,
 ADD INDEX `fk_historicoacesso_usuario_idx` (`idhistoricoacessos` ASC) VISIBLE;
-;
+
 ALTER TABLE `softedu`.`usuario` 
 ADD CONSTRAINT `fk_perfil_usuario`
   FOREIGN KEY (`perfilUsuarioID`)
@@ -352,7 +352,7 @@ ADD CONSTRAINT `fk_historicoacesso_usuario`
 
   ALTER TABLE `softedu`.`tabuleiro` 
 ADD INDEX `fk_usuario_tabuleiro_idx` (`usuario` ASC) VISIBLE;
-;
+
 ALTER TABLE `softedu`.`tabuleiro` 
 ADD CONSTRAINT `fk_usuario_tabuleiro`
   FOREIGN KEY (`usuario`)
