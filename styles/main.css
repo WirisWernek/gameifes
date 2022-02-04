@@ -167,3 +167,7 @@ select:active {
 div{
     padding: 10px 0px 0px 0px;
 }
+
+div.titulo {
+    text-align: center;
+}
