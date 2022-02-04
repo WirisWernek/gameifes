@@ -12,7 +12,9 @@
 
 <body>
     <main>
-        <h1 style="text-align: center;">Atividades Em Andamento</h1>
+    <div class="titulo">
+            <h1 style="text-align: center;">Atividades Em Andamento</h1>
+        </div>
         <nav>
             <a href="./index.php">Home</a>
             <a href="./initnewwork.php">Nova Atividade</a>

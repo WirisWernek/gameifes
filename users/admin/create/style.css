@@ -1,13 +1,23 @@
+:root {
+    --preto: rgb(41, 98, 124);
+    --verde: rgb(33, 109, 100);
+    --azul: rgb(24, 31, 88);
+    --cinza: rgb(224, 224, 224);
+}
+
+
 [id=login] {
     margin:10px;
     border-color: transparent;
     border-radius: 3px;
+    background-color: var(--cinza);
 }
 
 [id=senha]{
     margin: 5px;
     border-color: transparent;
     border-radius: 3px;
+    background-color: var(--cinza);
 }
 
 [id=nome] {
