@@ -11,6 +11,16 @@
 </head>
 
 <body>
+    <header>
+        <div class="menu">
+            <nav>
+                <a href="../index.php">Home</a>
+                <a href="#">Gerenciar Usuários</a>
+                <a href="../../../login/historicoacesso.php?opcao=Logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
     <main>
         <br><a id="cad" href="../create/registeruser.php">Cadastrar Novo Usuário</a>
         <?php

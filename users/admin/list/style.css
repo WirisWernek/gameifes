@@ -1,22 +1,17 @@
-[id="edit"] {
-    border-color: transparent;
-    background-color: var(--cinza);
-    text-decoration: none;
-    color: #000000;
-    border-radius: 4px;
-    padding-left: 7px;
-    padding-right: 7px;
-}
+.TabelaU{width: 100%; text-align: center;}
+    .TabelaU thead{background: black; font-weight: bold; color:#fff;}
+    .TabelaU tbody tr:nth-child(1n){background: #124e69bd;}
+    .TabelaU tbody tr:nth-child(2n){background: #123b4e;}
+    .TabelaU th , .TabelaU td{padding: 7px 0;}
 
-[id="edit"]:hover {
-    background-color: var(--cinza);
-    color: black;
-    cursor: pointer;
-    box-shadow: 2px 3px 10px rgb(25, 208, 218);
-}
-
-[id="cad"] {
-    margin: 5px 5px 10px 5px;
-    padding: 5px;
-    border-radius: 4px;
+@media screen and (max-width: 480px){
+    .content{width: 94%;}
+    .TabelaU thead{display:none;}
+    .TabelaU tbody td{display: flex; flex-direction: column; }
+    }
+@media only screen and (min-width: 1200px){
+    .content{width:100%;}
+    .TabelaU tbody tr td:nth-child(4){width:5%;}
+    .TabelaU tbody tr td:nth-child(5){width:20%;}
+        
 }

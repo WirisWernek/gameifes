@@ -57,9 +57,12 @@ class Usuario
     }
     public function Read()
     {
+        
+        
         $sql = "call usuarios();";
         $resultado = $this->conexao->query($sql);
-        echo '<table>
+        echo '<div class="content">';
+        echo '<table class="TabelaU">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -94,6 +97,8 @@ class Usuario
         }
         echo '</tbody>
         </table>';
+        echo '<div>';
+
     }
 
     public function Update($id, $nome, $login, $perfilUsuario)
