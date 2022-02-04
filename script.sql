@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS `softedu`.`atividade_aluno` (
   `status` VARCHAR(45) NULL COMMENT '',
   `datainicio` DATETIME NULL COMMENT '',
   `datafim` DATETIME NULL COMMENT '',
-  `atividadeid` INT NULL COMMENT '',
+  `atividadeid` INT NOT NULL COMMENT '',
   PRIMARY KEY (`idatividade_aluno`)  COMMENT '')
 ENGINE = InnoDB;
 
@@ -193,7 +193,7 @@ DROP TABLE IF EXISTS `softedu`.`historicoacessos` ;
 CREATE TABLE `softedu`.`historicoacessos` (
   `idhistoricoacessos` INT NOT NULL,
   `hora_data` DATETIME NOT NULL,
-  `tempoacesso` TIME NULL,
+  `tempoacesso` TIME NOT NULL,
   PRIMARY KEY (`idhistoricoacessos`));
 
 -- -----------------------------------------------------
