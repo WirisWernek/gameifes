@@ -14,11 +14,11 @@
 
     <nav>
         <a href="../index.php">Home</a>
-        <a href="#">Gerenciar Atividades</a>
+        <a href="listwork.php">Gerenciar Atividades</a>
         <a href="listworklevel.php">Gerenciar Nivel Das Atividades</a>
         <a href="listworkcategory.php">Gerenciar Categoria Das Atividades</a>
         <a href="listboard.php">Gerenciar Tabuleiros</a>
-        <a href="listbackgroundboard.php">Gerenciar Imagens de Fundo</a>
+        <a href="#">Gerenciar Imagens de Fundo</a>
         <a href="listimageboard.php">Gerenciar Imagens Tabuleiro</a>
         <a href="../../../login/historicoacesso.php?opcao=Logout">Logout</a>
     </nav>
