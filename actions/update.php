@@ -57,7 +57,7 @@ function updateuser()
     require_once('../includes/classes/Usuario.php');
     $usuario = new Usuario();
     $conexao = $usuario->getConexao();
-    $resultado = $usuario->Update($_POST['id'], $_POST['nome'], $_POST['login'], $_POST['senha'], $_POST['perfilusuario']);
+    $resultado = $usuario->Update($_POST['id'], $_POST['nome'], $_POST['login'], $_POST['perfilusuario']);
 
     if ($resultado) {
         $_SESSION['mensagem'] = "Atualizado com sucesso!";
